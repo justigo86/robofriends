@@ -1,0 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/sega-logo-font');
+
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    src: url('http://fonts.cdnfonts.com/css/sega-logo-font');
+}
+
+h1 {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: #0ccac4;
+}

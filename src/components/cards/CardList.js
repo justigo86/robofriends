@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import './CardList.css';
 
 const CardList = ({robots}) => {
     // robots is used as a PROP in this situation
@@ -8,16 +9,19 @@ const CardList = ({robots}) => {
     // })       instead of assigning the array to a variable, can return it within the return statement
     return (
         <div
-            //className='card-list'
+            className='card-list'
         >
             {
-                robots.map((robot, index) => {
-                    return <Card
-                        key={robots[index].id}
-                        name={robots[index].name}
-                        email={robots[index].email}
-                        id={robots[index].id}
-                        robot={robot}/>
+                robots.map((robot) => {
+                    return (
+                        <Card
+                            key={robot.id}
+                            robot={robot}
+                            // name={robot[index].name}
+                            // email={robot[index].email}
+                            // id={robot[index].id}
+                        />
+                    )
                 })
             }
         </div>

@@ -36,7 +36,11 @@ const App = () => {
             <h1>Loading...</h1> :
             <div className='tc'>
                 <h1 className='f1'>RoboFriends</h1>
-                <SearchBox updateSelection={updateWhileSearch} placeholder={'search robots'}/>
+                <SearchBox
+                    className={'robot-search-box'}
+                    updateSelection={updateWhileSearch}
+                    placeholder={'search robots'}
+                />
                 <Scroll>
                     <ErrorBoundry>
                         <CardList robots={filteredRobots} />

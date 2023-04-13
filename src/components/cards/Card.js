@@ -1,10 +1,12 @@
 import React from 'react';
+import './Card.css';
 
-const Card = ({name, email, id}) => {
+const Card = ({robot: {id, name, email }}) => {
+    //const { id, name, email } = robot;      //destructured further in props
     return (
         <div
-            className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5"
-            //className="card-container"
+            // className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5"
+            className="card-container"
         >
             <img
                 // src={`https://robohash.org/${id}?200x200`}

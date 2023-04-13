@@ -1,12 +1,12 @@
 import React from 'react';
 import './SearchBox.css';
 
-const SearchBox = ({searchfield, updateSelection, placeholder}) => {
+const SearchBox = ({className, updateSelection, placeholder}) => {
     return (
         <div>
             <input
                 className='pa3 ba b--green bg-lightest-blue'
-                //className={className} //props
+                //className={`search-box ${className}`}     //props
                 type='search'
                 placeholder={placeholder}
                 onChange={updateSelection}
